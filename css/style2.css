@@ -1,0 +1,170 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: white;
+}
+
+
+/* Reset de ul y li  */
+
+a {
+    text-decoration: none;
+    color: black;
+} 
+
+ul, li {
+    list-style-type: none;
+}
+
+.barra_Navegacion {
+    display: inline-block; 
+}
+
+h1{
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+h2 {
+    text-align: center;
+    padding: 20px;
+    font-family: 'Open Sans';
+}
+
+/* NavBar */
+
+    .nav_Prop {
+        display: inline-block; 
+    }
+
+
+    .nav_Logo {
+        width: 200px;
+        height: 50px;
+    }
+
+    .nav_List {
+        margin-left: 500px;
+        display: inline-block;
+        font-size: 1.3rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+    }
+
+    .nav_List ul li{
+        display: inline-block; 
+        padding: 0 15px 15px;
+    }
+
+/* Seccion | Imagen de inicio */
+
+    .imagen_Prop {
+        width: 100vw; 
+        /* vw: Tamaño de la totalidad de la pantalla */
+        height: 70vh;
+        /* vh: totalidad de la altura - el numero es un porcentaje*/
+    }
+
+    .oferta_Box {
+        display: inline-block;
+        border-radius: 20px;
+        box-shadow: 20px 20px 20px grey;
+        overflow: hidden;
+        padding: 0 20px;
+        margin-left: 50px;
+        margin-bottom: 25px;
+    }
+
+    .colecciones_Contenedor {
+        display: inline-block;
+        width: 100vw;
+        height: 700px;
+        /* background-color: aqua; */
+    }
+
+    .cImagen_Contenedor {
+        display: inline-block;
+    }
+
+        .cImagen_Contenedor img {
+            width: 750px;
+            height: 600px;
+        }
+
+    .cImagen_Descripcion {
+        display: inline-block;
+        /* background-color: black; */
+        width: 50vw;
+        text-align: center;
+    }
+
+    .cImagen_Texto {
+        padding: 50px;
+        margin-bottom: 250px;
+    }
+
+    
+
+    /*Seccion | Novedades */
+
+    .novedades_Contenedor {
+        position: relative;
+        height: 800px;
+    }
+
+    .novedades_Box {
+        display: inline-block; 
+        width: 100vw;
+        height: 800px;
+        position: relative;
+        filter: brightness(0.95);
+    }
+
+    .novedades_Texto{
+        text-align: center;
+        font-size: 5rem;
+        /* top: 25px; */
+        transform: translate(0%, -500%);
+        color: white;
+        text-shadow: 10px 10px 10px rgba(105, 105, 105, 0.479);
+    }
+
+    footer {
+        background-color: rgba(238, 238, 238, 0.438);
+        width: 100vw;
+        height: 200px;
+        padding: 50px;
+    }
+    
+    /* .footer_Contenedor{
+    } */
+    
+    .footertext1{
+        display: inline-block;
+        padding: 10px;
+        margin-left: 1100px;
+    }
+    
+    .footer-logo {
+        display: inline-block;
+        padding-right: 10px;
+    }
+    
+    .footer-logo img {
+        width: 200px;
+        height: 50px;
+        margin-left: 200px;
+    }
+
+
+
+

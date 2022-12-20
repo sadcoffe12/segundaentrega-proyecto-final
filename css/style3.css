@@ -1,0 +1,209 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: white;
+}
+
+
+/* Reset de ul y li  */
+
+a {
+    text-decoration: none;
+    color: black;
+} 
+
+ul, li {
+    list-style-type: none;
+}
+
+.barra_Navegacion {
+    display: inline-block; 
+}
+
+h1{
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+h2 {
+    text-align: center;
+    padding: 20px;
+    font-family: 'Open Sans';
+}
+
+/* @media screen and (min-width: 768px) { 
+
+    .cont_General{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 4fr;
+    }
+    
+    .cont_carruselInicio{
+        grid-column: 1 / 2;
+        grid-row: 1 / 4;
+    }
+
+} */
+
+
+/*Display flex y con grid:
+Habilita usar align = vertical
+            justify = Horizontal
+            Self = El mismo */
+
+/* Carrusel Inicio  */
+
+.imagen_Carrusel img{
+    object-fit: cover;
+    width: fit-content;
+    height: 60vh;
+}
+
+.imagen_cItems img{
+    object-fit: cover;
+    width: fit-content;
+    height: 60vh;
+}
+
+.imagen_Colecciones img{
+    object-fit: cover;
+    height: 50vh;
+}
+
+.imagen_Novedades img{
+    object-fit: cover;
+    height: 50vh;
+    width: 100vw;
+    overflow: hidden;
+    filter: blur(50);
+}
+
+.footer_Contenedor {
+    /* display: grid;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2; */
+    width: 100vw;
+    height: 30vh;
+}
+
+.footer_Text{
+    display: inline-block;
+}
+
+.footer_TextBottom div{
+    display: inline;
+    width: 200px;
+}
+
+.footer_Logo {
+    display: inline-block;
+}
+
+.footer_Logo img {
+    width: 200px;
+    height: 50px;
+}
+
+
+
+
+/* Old CSS */
+
+/* NavBar */
+
+    .nav_Prop {
+        display: inline-block; 
+    }
+
+
+    .nav_Logo {
+        width: 200px;
+        height: 50px;
+    }
+
+    .nav_List {
+        margin-left: 500px;
+        display: inline-block;
+        font-size: 1.3rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+    }
+
+    .nav_List ul li{
+        display: inline-block; 
+        padding: 0 15px 15px;
+    }
+
+/* Seccion | Imagen de inicio */
+
+    .imagen_Prop {
+        width: 100vw; 
+        /* vw: Tamaño de la totalidad de la pantalla */
+        height: 70vh;
+        /* vh: totalidad de la altura - el numero es un porcentaje*/
+    }
+
+    .oferta_Box {
+        display: inline-block;
+        border-radius: 20px;
+        box-shadow: 20px 20px 20px grey;
+        overflow: hidden;
+        padding: 0 20px;
+        margin-left: 50px;
+        margin-bottom: 25px;
+    }
+
+    .cImagen_Descripcion {
+        display: inline-block;
+        /* background-color: black; */
+        width: 50vw;
+        text-align: center;
+    }
+
+    .cImagen_Texto {
+        padding: 50px;
+        margin-bottom: 250px;
+    }
+
+    
+
+    /*Seccion | Novedades */
+
+    .novedades_Contenedor {
+        position: relative;
+        height: 800px;
+    }
+
+    .novedades_Box {
+        display: inline-block; 
+        width: 100vw;
+        height: 800px;
+        position: relative;
+        filter: brightness(0.95);
+    }
+
+    .novedades_Texto{
+        text-align: center;
+        font-size: 5rem;
+        /* top: 25px; */
+        transform: translate(0%, -500%);
+        color: white;
+        text-shadow: 10px 10px 10px rgba(105, 105, 105, 0.479);
+    }
+
+    
+
+
+
+
+
