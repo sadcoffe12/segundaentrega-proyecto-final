@@ -1,169 +1,390 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* background-color: #262626; */
-
 }
 
-li, ul, a {
-    text-decoration: none;
+header {
+    background-color: white;
 }
+
+
+/* Reset de ul y li  */
 
 a {
+    text-decoration: none;
     color: black;
+} 
+
+ul, li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .barra_Navegacion {
-    width: 100%;
-    /* height: 75px; */
-    display: flex;
-    /* background-color: rgb(76, 0, 255);  */
+    display: inline-block; 
 }
 
-.imagenInicio {
-    width: auto;
-    height: 700px;
-    /* background-color: green; */
+h1{
+    visibility: hidden;
+    width: 0;
+    height: 0;
 }
 
-/* .imagenLogo {}  */
-
-.carrusel {
-    margin-bottom: 30px;
-}
-
-/* Seccion de colecciones */
-
-    .ofertaCarrusel {
-        width: 100%;
-        height: 350px;
-        /* background-color: rgb(0, 9, 128); */
-    }
-
-    .ofertaBox {
-        /* width: 350px;
-        height: 350px; */
-        background-color: white;
-        display: inline-block;
-        margin-left: 15px;
-        margin-right: 15px;
-    }
-
-    /* Estos boxes fueron hardcodeados para parecerse mas a el Wireframe, Investigar para hacer lo mas efectivo */
-
-        /* Hardcode1 */
-        
-        .oBox1 {
-            margin-left: 0px;
-        }
-        .oBox6 {
-            width: 100px;
-        }
-
-/* Colecciones en Pagina "Colecciones" - */
-    /* Nota: Buscar mejor organizacion para evitar redundantes */
-
-    .coleccionBanner {
-        width: 100%;
-        height: 400px;
-    }
-    .coleccionBanner.banner1 {
-        background-color: aquamarine;
-    }
-    .coleccionBanner.banner2 {
-        background-color: rebeccapurple;
-    }
-    .coleccionBanner.banner3 {
-        background-color: blue;
-    }
-    .coleccionBanner.banner4 {
-        background-color: tomato;
-    }
-
-.catalogoBanner{
-    width: 33%;
-    height: 400px;
-}
-
-.catalogoBanner.banner1 {
-    background-color: aquamarine;
-}
-.catalogoBanner.banner2 {
-    background-color: rebeccapurple;
-}
-.catalogoBanner.banner3 {
-    background-color: blue;
-}
-.catalogoBanner.banner4 {
-    background-color: tomato;
-}
-.catalogoBanner.banner5 {
-    background-color: salmon;
-}
-.catalogoBanner.banner6 {
-    background-color: yellowgreen;
-}
-
-/* Index | Seccion de colecciones y estilos */
-
-    .coleccionesCarrusel {
-        width: 100%;
-        height: 700px;
-        display: flex;
-
-    }
-
-    .coleccionesBox {
-        width: 50%;
-        height: 700px;
-    }
-
-    .cBoxDescripcion {
-        width: 50%;
-        height: 700px;
-        padding: 250px 70px 0 70px;
-        background-color: white;
-    }
-
-    .cButton{
-        width: auto;
-        height: 50px;
-        float: right;        
-    }
-
-/* Index | Seccion de Novedades */
-
-.novedadesBox{
-    width: 100%;
-    height: 700px;
-}
-
-.contactoBox {
-    width: 100%;
-    height: 700px;
-    background-color: beige;
-}
-
-.footer {
-    width: 100%;
-    height: 150px;
-    background-color: black;
-}
-
-.novedadesBox {
-    width: 100%;
-    height: 700px;
+h2 {
     text-align: center;
-    display: flex
+    padding: 20px;
+    font-family: 'Open Sans';
 }
 
-/* Seccion de Footer */
-
-.footer {
-    background-color: rgb(30, 30, 30);    
+.imagen_Carrusel img{
+    object-fit: cover;
+    width: fit-content;
+    height: 60vh;
+    /* object-position: top; */
 }
 
-h5, p {
-    font: white;
+.imagen_cItems img{
+    object-fit: cover;
+    width: fit-content;
+    height: 60vh;
 }
+
+.imagen_Colecciones img{
+    object-fit: cover;
+    height: 50vh;
+}
+
+.imagen_Novedades img{
+    object-fit: cover;
+    height: 50vh;
+    width: 100vw;
+    overflow: hidden;
+    filter: blur(50);
+}
+
+    .nav_Prop {
+        display: inline-block; 
+    }
+
+
+    .nav_Logo {
+        width: 200px;
+        height: 50px;
+    }
+
+    .nav_List {
+        margin-left: 500px;
+        display: inline-block;
+        font-size: 1.3rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+    }
+
+    .nav_List ul li{
+        display: inline-block; 
+        padding: 0 15px 15px;
+    }
+
+/* Seccion | Imagen de inicio */
+
+    .imagen_Prop {
+        width: 100vw; 
+        height: 70vh;
+    }
+
+    .oferta_Box {
+        display: inline-block;
+        border-radius: 20px;
+        box-shadow: 20px 20px 20px grey;
+        overflow: hidden;
+        padding: 0 20px;
+        margin-left: 50px;
+        margin-bottom: 25px;
+    }
+
+    .cImagen_Descripcion {
+        display: inline-block;
+        width: 50vw;
+        text-align: center;
+    }
+
+    .cImagen_Texto {
+        padding: 50px;
+        margin-bottom: 250px;
+    }
+
+    /*Seccion | Novedades */
+
+    .novedades_Contenedor {
+        position: relative;
+        height: 800px;
+    }
+
+    .novedades_Box {
+        display: inline-block; 
+        width: 100vw;
+        height: 800px;
+        position: relative;
+        filter: brightness(0.95);
+    }
+
+    .novedades_Texto{
+        text-align: center;
+        font-size: 5rem;
+        /* top: 25px; */
+        transform: translate(0%, -500%);
+        color: white;
+        text-shadow: 10px 10px 10px rgba(105, 105, 105, 0.479);
+    }
+
+/* Pagina de catalogo */
+
+    .categoria_Contenedor {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+        .itemCategoria {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+        .text_topLabel {
+            grid-column: 1 / 3;
+            grid-row: 1 / 1;
+            height: 20%;
+        }
+
+    /* Pagina de colecciones */
+
+    .imagen_Coleccion img {
+
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .contenedor_ItemsC {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+        .itemColeccion {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+    .formDatos {
+        margin-left: 2vw;
+    }
+    
+        .formDatos input {
+            width: 95%;
+            /* max-width: 50vw; */
+        }
+
+        .formDatos textarea {
+            width: 95%;
+            /* max-width: 50vw; */
+        }
+
+    .formBotones {
+        margin: 5px;
+    }
+
+    .c_newsletter {
+        visibility: hidden;
+    }
+
+/* Seccion de footer */
+
+footer {
+    background-color: rgb(30, 30, 30);   
+    color: white;
+    padding: 2rem;
+}
+
+    footer a { 
+        color: white;
+    }
+
+    .contenedor_Filosofia {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        .f_Box{
+            margin: 1rem;
+        }
+
+    .contenedor_Contactos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+        .newsletter {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            margin-bottom: 1rem;
+        }
+
+        .redesSociales {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            margin-bottom: 1rem;
+        }
+
+            .newsletter_Contenido {
+                display: flex;
+                flex-direction: row;
+                gap: 2rem;
+            }
+
+                .newsletter_Field {
+                    width: 80%;
+                }
+
+            .redesSociales_Contenido {
+                display: flex;
+                flex-direction: row;
+                gap: 10%;
+            }
+
+                .f_socialLogo img {
+                    width: 24px;
+                    height: 24px;
+                }
+
+        .contenedor_ListBottom {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 0 1rem;
+            gap: 2%;
+        }
+
+    @media screen and (min-width: 720px) {
+
+        /* Media | Index */
+
+        .imagen_Carrusel img{
+            object-fit: cover;
+            width: fit-content;
+            height: 80vh;
+            object-position: top;
+        }
+
+        /* Media | Pagina de Colecciones */
+        
+        .contenedor_Coleccion {
+            display: flex;           
+        }
+
+            .imagen_Coleccion {
+                width: 50%;
+            }
+
+            .contenedor_ItemsC {
+                width: 50%;
+            }
+
+        /* Media | Pagina de Contacto */
+
+        .c_newsletter {
+            visibility: visible;
+        }
+
+        .categoria_Contenedor {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr;
+            
+        }
+
+        .text_topLabel {
+            grid-column: 1 / 5;
+        }
+
+        /* Media | Pagina de footer */
+
+        .contenedor_Filosofia {
+            display: flex;
+            flex-direction: row;
+
+        }
+    
+        .contenedor_Contactos {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    
+            .newsletter {
+                display: flex;
+                flex-direction: column;
+                width: 30%;
+            }
+    
+            .redesSociales {
+                display: flex;
+                flex-direction: column;
+                width: 30%;
+            }
+    
+                .newsletter_Contenido {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 2%;
+                }
+    
+                    .newsletter_Field {
+                        width: 80%;
+                        border-radius: 3px;
+                    }
+    
+                .redesSociales_Contenido {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10%;
+                }
+    
+                    .f_socialLogo img {
+                        width: 24px;
+                        height: 24px;
+                    }
+    
+        .contenedor_ListBottom {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
