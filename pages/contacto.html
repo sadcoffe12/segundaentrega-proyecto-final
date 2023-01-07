@@ -11,11 +11,13 @@
     <title>Send Help | Contacto</title>
 </head>
 <body>
-    <header>
+    <header class="container-fluid">
         <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
 
-                <a class="navbar-brand" href="../pages/index.html"><img class="nav_Logo"
+            <div class="container-fluid position-relative">
+
+                <a class="navbar-brand position-relative top-0 start-50 translate-middle-x"
+                    href="../pages/index.html"><img class="nav_Logo"
                         src="../assets/logo/SendHelpLetras-removebg-preview.png" alt=""></a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -26,16 +28,16 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="../pages/index.html">Home</a>
+                            <a class="nav-link active" aria-current="page" href="../pages/index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="../pages/catalogo.html">Catalogo</a>
+                            <a class="nav-link" href="../pages/catalogo.html">Catalogo</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../pages/colecciones.html">Colecciones</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="../pages/contacto.html">Contacto</a>
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -43,29 +45,120 @@
         </nav>
     </header>
 
-    <p>Estas en contacto</p>
-    <section class="contacto">
-        <div class="contactoBox"></div>
-    </section>
+    <main>
+        <h2>Contactanos</h2>
 
-    <footer>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5523.313107758944!2d-58.393045915083476!3d-34.59956856473023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses!2sar!4v1672527556505!5m2!1ses!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+        <section class="contenedorContacto row">
 
-        <div>
+            <div class="contenedorForm col-md-6">
 
-            <div>
+                <form action="" method="">
 
-                <div class="footertext1">
-                    <h3>Sobre nosotros</h3>
-                    <ul>
-                        <li>Contacto</li>
-                        <li>Direccion</li>
-                    </ul>
+                    <fieldset>
+                        <legend><h2>Describe tu consulta: </h2></legend>
+
+                        <label class="formDatos col-12 col-md-12" for="nombre">
+                            <h3>Nombre y Apellido</h3>
+                            <input type="text" name="" id="nombre" placeholder="Ingrese nombre y apellido" required>
+                        </label>
+
+                        <label class="formDatos col-12 col-md-12" for="telefono">
+                            <h3>Numero telefonico</h3>
+                            <input type="text" name="" id="telefono" placeholder="Ingrese numero telefonico" required>
+                        </label>
+                        <label class="formDatos col-12 col-md-12" for="email">
+                            <h3>Correo electronico</h3>
+                            <input type="email" name="" id="email" placeholder="Ingrese email" required>
+                        </label>
+
+                        <label class="formDatos col-12 col-md-12" for="descripcion">
+                            <h3>Descripcion del pedido</h3>
+                            <textarea name="" id="descripcion" cols="30" rows="5"></textarea>
+                        </label>
+
+                </fieldset>
+
+                    <input class="formBotones" type="submit">
+                    <input class="formBotones" type="reset">
+
+                </form>
+                
+            </div>
+
+            <div class="contenedorInfo d-flex flex-column justify-content-center col-md-6">
+
+            
+                <div class="infoTienda col-md-10">
+                    <p>Direccion: Caballito, Buenos Aires, Argentina</p>
+                    <p>Numero telefonico: +5491100005800</p>
                 </div>
 
-                <div class="footer-logo">
-                    <a href="/index.html"><img src="../assets/logo/SendHelpLetras-removebg-preview.png" alt=""></a>
+                <div class="c_newsletter col-md-10">
+                    <h5>Join our newsletter</h5>
+                    <div>    
+                        <div><input type="text" placeholder="Enter your email"></div>
+                        <div><input type="submit" value="Submit"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <footer> <!-- Footer2 -->
+
+        <div class="contenedor_Filosofia">
+            <div class="f_Box">
+                <h5>Diseño creativo</h5>
+                <p>Catalogo diseñado de una forma creativa y divertida con cariño puesto en cada uno de los articulos</p>
+            </div>
+            <div class="f_Box">
+                <h5>Etica en los recursos</h5>
+                <p>Nos aseguramos que nuestros productos provengan de origen responsable, asegurando la calidad de los materiales</p>
+            </div>
+            <div class="f_Box">
+                <h5>Sigue en contacto</h5>
+                <p>¿Tienes alguna consulta? Contactanos en nuestras redes sociales o mantente al tanto de novedades en nuestro Newsletter</p>
+            </div>
+        </div>
+
+        <div class="contenedor_Contactos">
+
+            <div class="newsletter">
+                <h5>Newsletter</h5>
+                <div class="newsletter_Contenido">
+                    <input class="newsletter_Field" type="text" placeholder="Enter your email">
+                    <input type="submit" value="Submit">
                 </div>
             </div>
+
+            <div class="redesSociales">
+                <h5>Redes Sociales</h5>
+                <div class="redesSociales_Contenido">
+                    <a class="f_socialLogo" href="https://www.instagram.com">
+                        <img src="../assets/logo/instagram.png" alt="">
+                    </a>
+
+                    <a class="f_socialLogo" href="https://www.facebook.com">
+                        <img src="../assets/logo/facebook.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <ul class="contenedor_ListBottom">
+            <li><a href="">(C) Send Help Shop 2022</a></li>
+            <li><a href="">Atencion al cliente</a></li>
+            <li><a href="">Informacion de envio</a></li>
+            <li><a href="">Colaboraciones</a></li>
+            <li><a href="">Terminos y condiciones</a></li>
+            <li><a href="">Sobre nosotros</a></li>
+        </ul>
 
     </footer>
 

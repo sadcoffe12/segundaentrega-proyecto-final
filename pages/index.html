@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="container-fluid">
         <nav class="navbar navbar-expand-lg bg-light">
 
             <div class="container-fluid position-relative">
@@ -71,22 +71,22 @@
                                 alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Basics Collection</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
+                                <p>Conoce nuestra coleccion de estilo minimalista y simple para aquellos que les guste la calidad pero sin dejar de estar a la moda</p>
                             </div>
                         </div>
                         <div class="carousel-item imagen_Carrusel">
                             <img src="../assets/img/broken/igor-rand-05arcvhg4R4-unsplash.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Broken Collection</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
+                                <p>¡Nueva coleccion! Para los alternativos que quieren romper todo. Inspirado en estilo de bandas de Rock y Punk alternativo</p>
                             </div>
                         </div>
                         <div class="carousel-item imagen_Carrusel">
-                            <img src="../assets/img/cyberpunk/artem-artemov-apssZPWDsUU-unsplash.jpg" class="d-block w-100"
+                            <img src="../assets/img/cyberpunk/soroush-khaksar-lqurHZLVJfA-unsplash.jpg" class="d-block w-100"
                                 alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Cyberpunk Collection</h5>
-                                <p>Some representative placeholder content for the third slide.</p>
+                                <p>¡Nueva coleccion! ¿Pasas mucho tiempo en el Cyber Espacio buscando aquel nuevo NeuroMod de reemplazo? Esta coleccion es para ti.</p>
                             </div>
                         </div>
                     </div>
@@ -146,16 +146,14 @@
                 <h2>Colecciones y estilos</h2>
 
                 <!-- Aqui estamos rompiendo un par de cosas de la card de bootstrap para modificarlo a mi favor y no sobreescriban mis cambios -->
-
                 <div class="colecciones_Contenedor row justify-content-center mb-2">
                     <div class="imagen_Colecciones p-0 col-12 col-md-6 overflow-hidden">
                         <img class="w-100" src="../assets/img/basics/rreza-delkhosh-1UVHZjLF7Q0-unsplash.jpg" alt="...">
                     </div>
                     <div class="col-11 row col-md-6 justify-content-around align-self-center">
                         <div class="col-11 p-2">
-                            <h5 class="">Card title</h5>
-                            <p class="">Some quick example text to build on the card title and make up the bulk of the
-                                card's content.</p>
+                            <h5 class="">Coleccion Basics</h5>
+                            <p class="">Conoce nuestra coleccion de estilo minimalista y simple para aquellos que les guste la calidad pero sin dejar de estar a la moda</p>
                             <a href="./colecciones.html" class="btn btn-dark w-20">Ver mas</a>
                         </div>
                     </div>
@@ -164,14 +162,13 @@
 
             <!-- Mediaquery en bootstrap 
 
-            col o row: 
-                sm: Pequeño
-                md: Tamaño medio
-                lg: Large
-                xl: XL
-                xxl: ponele aja
-            -->
-
+                col o row: 
+                    sm: Pequeño
+                    md: Tamaño medio
+                    lg: Large
+                    xl: XL
+                    xxl: ponele aja
+                -->
 
                 <!-- Carrusel de Novedades -->
 
@@ -188,39 +185,118 @@
                 </div>
             </section>
     </main>
+    
+    <footer> <!-- Footer2 -->
 
-    <footer>
-            <div class="f_Filosofia row justify-content-center">
+        <div class="contenedor_Filosofia">
+            <div class="f_Box">
+                <h5>Diseño creativo</h5>
+                <p>Catalogo diseñado de una forma creativa y divertida con cariño puesto en cada uno de los articulos</p>
+            </div>
+            <div class="f_Box">
+                <h5>Etica en los recursos</h5>
+                <p>Nos aseguramos que nuestros productos provengan de origen responsable, asegurando la calidad de los materiales</p>
+            </div>
+            <div class="f_Box">
+                <h5>Sigue en contacto</h5>
+                <p>¿Tienes alguna consulta? Contactanos en nuestras redes sociales o mantente al tanto de novedades en nuestro Newsletter</p>
+            </div>
+        </div>
+
+        <div>
+
+        <div class="contenedor_Contactos">
+
+                <div class="newsletter">
+                    <h5>Newsletter</h5>
+                    <div class="newsletter_Contenido">
+                        <input class="newsletter_Field" type="text" placeholder="Enter your email">
+                        <input type="submit" value="Submit">
+                    </div>
+                </div>
+
+                <div class="redesSociales">
+                    <h5>Redes Sociales</h5>
+                    <div class="redesSociales_Contenido">
+                        <a class="f_socialLogo" href="https://www.instagram.com">
+                            <img src="../assets/logo/instagram.png" alt="">
+                        </a>
+
+                        <a class="f_socialLogo" href="https://www.facebook.com">
+                            <img src="../assets/logo/facebook.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <ul class="contenedor_ListBottom">
+                <li><a href="">(C) Send Help Shop 2022</a></li>
+                <li><a href="">Atencion al cliente</a></li>
+                <li><a href="">Informacion de envio</a></li>
+                <li><a href="">Colaboraciones</a></li>
+                <li><a href="">Terminos y condiciones</a></li>
+                <li><a href="">Sobre nosotros</a></li>
+            </ul>
+        
+        </div>
+
+    </footer>
+
+    <!-- Footer 1 con Bootstarp -->
+
+    <!-- <footer class="container-fluid textColor text-white bg-black"> 
+
+            <div class="f_Filosofia row justify-content-center py-3">
                 <div class="i_Box col-11">
                     <h5>Diseño creativo</h5>
                     <p>Catalogo diseñado de una forma creativa y divertida con cariño puesto en cada uno de los articulos</p>
                 </div>
-                <div>
+                <div class="i_Box col-11">
                     <h5>Etica en los recursos</h5>
                     <p>Nos aseguramos que nuestros productos provengan de origen responsable, asegurando la calidad de los materiales</p>
                 </div>
-                <div>
+                <div class="i_Box col-11">
                     <h5>Sigue en contacto</h5>
-                    <p>¿Tienes alguna consulta? Contactanos en nuestras redes solciales o estate al tanto de novedades en nuestro Newsletter</p>
+                    <p>¿Tienes alguna consulta? Contactanos en nuestras redes sociales o mantente al tanto de novedades en nuestro Newsletter</p>
                 </div>    
             </div>
+
+            <div class="f_newsletter row justify-content-center">
+                <h5 class="f_newletterTitle col-11">Join our newsletter</h5>
+                <div class="f_newsletterContenedor col-11 d-flex flex-wrap gap-2">    
+                    <div><input type="text" placeholder="Enter your email"></div>
+                    <div><input type="submit" value="Submit"></div>
+                </div>
+            </div>
+
+            <div class="f_redesSociales row justify-content-center">
+                <div class="f_redesSocialesContenedor col-11 d-flex flex-wrap gap-2 py-2"> 
+                    <li>
+                        <a href="https://www.instagram.com">
+                            <img class="f_socialLogo" src="../assets/logo/instagram.png" alt="">
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://www.facebook.com">
+                            <img class="f_socialLogo" src="../assets/logo/facebook.png" alt="">
+                        </a>
+                    </li>
+                </div>
+            </div>
             
-            <div class="f_TextBottom">
-                <div><a href="">Atencion al cliente</a></div>
-                <div><a href="">Informacion de envio</a></div>
-                <div><a href="">Colaboraciones</a></div>
-                <div><a href="">Terminos y condiciones</a></div>
-                <div><a href="">Sobre nosotros</a></div>
-                <div><a href="">Send Help Shop 2022</a></div>
+            <div class="f_ListBottom row justify-content-center">
+                <ul class="f_ListBottomContenedor p-0 col-11 d-flex flex-wrap gap-2">
+                    <li><a href="">(C) Send Help Shop 2022</a></li>
+                    <li><a href="">Atencion al cliente</a></li>
+                    <li><a href="">Informacion de envio</a></li>
+                    <li><a href="">Colaboraciones</a></li>
+                    <li><a href="">Terminos y condiciones</a></li>
+                    <li><a href="">Sobre nosotros</a></li>
+                </ul>
             </div>
 
-            <div class="f_newsletter">
-                <h5>Join our newsletter</h5>
-                <input type="text" placeholder="Enter your email">
-                <input type="submit" value="Submit">
-            </div>
-
-    </footer>
+    </footer> -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
